@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 5px 5px 5px #ccc;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav img {
+            width: 35px;
+            height: 35px;
+            border-radius: 25%;
+        }
+
+        .control {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            width: 100%;
+            height: 35px;
+            background-color: #000;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            margin-top: 70px !important;
+            width: 70%;
+            /* background-color: skyblue; */
+            margin-top: 50px;
+            margin-bottom: 35px;
+        }
+
+        .swiper {
+            margin: 0px auto;
+            width: 100%;
+            height: 400px;
+            /* background-color: #91b; */
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .authorName {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .authorName span {
+            margin-top: 20px;
+            display: block;
+            height: 50px;
+            line-height: 27px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .authorDetails {
+            background-color: #fff;
+            width: 100%;
+            display: flex;
+        }
+
+        .authorDetails img {
+            display: block;
+            padding: 20px;
+            width: 45%;
+            height: 290px;
+        }
+
+        .authorText {
+            margin-top: 20px;
+            padding-right: 10px;
+        }
+
+        .authorText p {
+            font-size: 14px;
+        }
+
+        .longmao {
+            background-color: #fff;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .longmao img {
+            width: 400px;
+            height: 240px;
+        }
+
+        .longmao div {
+            flex: 1;
+            margin-top: 10px;
+        }
+
+        .CTs {
+            display: flex;
+            margin-bottom: 60px;
+        }
+
+        .CTs li {
+            margin-right: 60px;
+        }
+
+        .LM-detail {
+            margin: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="nav">
+        <!-- 用户头像部分 -->
+        <div class="user">
+            <img src="./image/userLogo.jpg" alt="用户头像">
+            <span style="font-size:12px; margin-left: 10px;">宫崎骏映画馆</span>
+        </div>
+        <!-- 控制按钮 -->
+        <div class="control">
+            <a class="a1">首页</a>
+            <a class="a2">作者介绍</a>
+            <a class="a3">作品欣赏</a>
+            <a class="a4">创作背景</a>
+            <a class="a5">社会效果</a>
+            <a class="a6">观众评价</a>
+        </div>
+    </div>
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 轮播图 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/LB1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/LB2.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/LB3.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/LB4.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 作者介绍 -->
+        <div class="authorName"><span>宫崎骏介绍</span></div>
+        <div class="authorDetails">
+            <img src="./image/作者介绍图.jpeg" alt="">
+            <div class="authorText">
+                <p>宫崎骏，1941年1月5日出生于日本东京都文京区，日本动画师、动画制作人、漫画家、动画导演、动画编剧。毕业于日本东京学习院大学政治经济部。</p>
+                <p>1963年进入东映动画公司，从事动画师工作。1971年加入手冢治虫成立的“虫Production动画部”。1974年加入Zuiyou映像与高田勋、小田部羊一共同创作《阿尔卑斯山的少女》
+                    。1979年转入东京电影新社创作了自己首部电影《鲁邦三世卡里奥斯特罗之城》。1982年开始独立创作漫画，在《Animage》上连载漫画《风之谷》，该作品获得第23届日本漫画家协会赏。1984年执导《风之谷》，该片获得罗马奇幻电影节最佳动画短片奖等4项大奖。
+                </p>
+                <p>1985年与高田勋、铃木敏夫共同创立吉卜力工作室。1986年执导《天空之城》，该片获得第41回每日电影奖大藤信郎赏等6项大奖。1988年执导《龙猫》，该片荣获第13回报知电影奖最佳导演奖等24项大奖。1997年执导《幽灵公主》，该片荣获第21届日本电影学院奖最佳影片奖等27项大奖
+                    。2001年执导《千与千寻》，该片荣获第75届奥斯卡金像奖最佳动画长片奖、第52届柏林国际电影节金熊奖等9项大奖
+                    。2004年执导《哈尔的移动城堡》，该片荣获第9届好莱坞电影奖最佳动画片奖等8项大奖。</p>
+            </div>
+        </div>
+        <!-- 作者作品集 -->
+        <div class="authorName"><span>作品集</span></div>
+        <ul class="CTs">
+            <li class="longmao">
+                <img src="./image/龙猫.jpeg" alt="龙猫">
+                <div>
+                    <span
+                        style="font-size:20px;font-weight:700;margin-top: 10px;margin-left: 10px; align-self: flex-start;">《龙猫》</span>
+                    <span
+                        class="LM-detail">《龙猫》是由宫崎骏执导，日高法子、坂本千夏、糸井重里配音的动画电影，于1988年4月16日在日本上映。高清重制版于2018年12月14日在中国公映。该片讲述了草壁达郎的妻子草壁靖子生病住院后，他带着草壁皋月与四岁的妹妹草壁梅回到乡间居住的故事。</span>
+                </div>
+            </li>
+            <li class="longmao">
+                <img src="./image/波妞.jpeg" alt="波妞">
+                <div>
+                    <span
+                        style="font-size:20px;font-weight:700;margin-top: 10px;margin-left: 10px; align-self: flex-start;">《崖上的波妞》</span>
+                    <span
+                        class="LM-detail">《崖上的波妞》是由吉卜力工作室制作的动画电影，由宫崎骏执导，奈良柚莉爱、山口智子、长岛一茂等参与配音。该片讲述了深海里的人鱼小公主波妞喜欢上了人类男孩宗介，于是一心想变成人类的故事。该片于2008年7月19日在日本上映。</span>
+                </div>
+            </li>
+            <li class="longmao">
+                <img src="./image/千与千寻.jpeg" alt="千与千寻">
+                <div>
+                    <span
+                        style="font-size:20px;font-weight:700;margin-top: 10px;margin-left: 10px; align-self: flex-start;">《千与千寻》</span>
+                    <span
+                        class="LM-detail">《千与千寻》由吉卜力工作室制作的动画电影，由宫崎骏执导，柊瑠美、入野自由、中村彰男、夏木真理等人参与配音。讲述了千寻意外来到神灵世界后，为了救因惩罚而变成猪的家人，经历许多磨难的故事。2001年7月20日在日本上映。</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="footer"><span>版权所有 宫崎骏</span></div>
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+<script>
+    // new 一个swiper实例
+    var swiper = new Swiper(".swiper", {
+        autoplay: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+</html>
