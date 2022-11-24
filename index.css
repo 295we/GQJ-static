@@ -1,0 +1,164 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    width: 35px;
+    height: 35px;
+    border-radius: 25%;
+}
+
+.control {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 70px !important;
+    width: 70%;
+    /* background-color: skyblue; */
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.swiper {
+    margin: 0px auto;
+    width: 100%;
+    height: 400px;
+    /* background-color: #91b; */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.authorName {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.authorName span {
+    margin-top: 20px;
+    display: block;
+    height: 50px;
+    line-height: 27px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.authorDetails {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+}
+
+.authorDetails img {
+    display: block;
+    padding: 20px;
+    width: 45%;
+    height: 290px;
+}
+
+.authorText {
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.authorText p {
+    font-size: 14px;
+}
+
+.longmao {
+    background-color: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.longmao img {
+    width: 400px;
+    height: 240px;
+}
+
+.longmao div {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.CTs {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.CTs li {
+    margin-right: 60px;
+}
+
+.LM-detail {
+    margin: 10px;
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 900px;
+    display: none;
+}
