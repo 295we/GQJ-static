@@ -61,6 +61,9 @@ li {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 h2 {
@@ -68,18 +71,30 @@ h2 {
 }
 
 li img {
-    width: 30%;
-    height: 250px;
+    display: block;
+    min-width: 345px;
+    width: 345px;
+    height: 30vh;
     margin: 0;
     padding: 0;
-    padding: 10px;
+    margin: 20px;
 }
 
-li .explain {
-    background-color: #ccc;
+
+
+.explain {
+    background-color: #eee1d9;
     border-radius: 15px;
     font-size: 14px;
     width: 70%;
     margin: 20px;
-    height: 100%;
+    line-height: 22px;
+    margin-left: 100px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li .explain h3 {
+    line-height: normal;
 }

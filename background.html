@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/background.css">
     <title>创作背景</title>
     <style>
         .container {
@@ -20,8 +21,32 @@
 
 <body>
     <div class="container">
-        创作背景
+        <ul>
+            <li class="movieCard">
+                <div class="movieImg">
+                    <img src="./image/movie1.jpeg" alt="">
+                </div>
+                <div class="bgText">
+                    <div>
+                        漆黑的夜空中，一艘海盗船骤然对商船发动了袭击，海盗们的目标不是掠夺财物，而是寻找一名叫希达的少女。此时，希达正被军方软禁，在混乱中她击昏了在请求援兵的穆斯卡，并取回了自己被夺去的项链。这时海盗攻了进来，希达在逃跑中不小心从商船坠落下来，就在下坠时，希达项链上的宝石放出耀眼的光芒，神秘的力量使希达缓缓的漂向地面。
+                    </div>
+                    <span class="time">1986-8-02</span>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
+<script>
+    let movieImg = document.querySelectorAll('.movieImg')
+    movieImg.forEach((item, index) => {
+        item.onmouseover = function () {
+            item.style.width = '200px'
+            item.innerHTML = '天空之城'
+        }
+        item.onmouseout = function () {
+            item.innerHTML = `<img src="./image/movie${index + 1}.jpeg" alt="">`
+        }
+    })
+</script>
 
 </html>

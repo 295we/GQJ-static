@@ -9,3 +9,10 @@ allA.forEach((a, i) => {
     iframes[i].style.display = 'block'
   }
 })
+
+let footer = document.querySelector('.footer')
+console.log(iframes[1].style)
+if (iframes[1].style.display == 'block') {
+  console.log('录播图出来')
+  footer.style.display = 'none'
+}
