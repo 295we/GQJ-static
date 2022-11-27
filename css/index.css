@@ -175,3 +175,38 @@ iframe {
     height: 900px;
     display: none;
 }
+
+.a4 {
+    position: relative;
+    display: block;
+}
+
+.guoxinye-select2 {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 3vw;
+    height: 5vh;
+    border-radius: 10%;
+    background-color: #ccc;
+    position: absolute;
+    top: 35px;
+    left: calc(70% + 6px);
+}
+
+.guoxinye-select2 a {
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    width: 90%;
+    height: 40%;
+}
+
+.guoxinye-select2 a:hover {
+    color: red;
+    cursor: pointer;
+}

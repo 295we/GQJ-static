@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: #fefefe;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:hover {
+    box-shadow: 5px 5px 5px #5a8fbc
+}
+
+li span {
+    font-size: 16px;
+    color: red;
+}
+
+li div {
+    margin: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+}
